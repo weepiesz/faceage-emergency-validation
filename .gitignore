@@ -1,0 +1,30 @@
+# ---- Patient data: never commit ----
+data/*.xlsx
+data/*.xls
+data/*.csv
+data/*.h5
+data/raw/
+!data/README.md
+
+# ---- Derived outputs ----
+results/*
+!results/.gitkeep
+
+# ---- Manuscript sources and private working files ----
+*.docx
+*.log
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

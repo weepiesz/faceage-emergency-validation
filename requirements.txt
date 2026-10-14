@@ -1,0 +1,21 @@
+# Main analysis environment (Python >= 3.9; developed and verified on Python 3.10.19)
+#
+# NOTE: FaceAge inference does NOT run in this environment. The released FaceAge model
+# uses Keras Lambda layers serialised under Python 3.6, which Python 3.8+ cannot
+# deserialise. Use a separate Python 3.7 environment with:
+#     tensorflow==2.6.2  keras==2.6.0  protobuf==3.20.3
+# See preprocessing/ and README.md section 2.
+
+numpy>=1.24,<2.1
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3
+matplotlib>=3.7
+seaborn>=0.12
+openpyxl>=3.1        # reading and writing .xlsx
+h5py>=3.8            # legacy HDF5 loader in scripts/utils/data_loader.py
+opencv-python>=4.8   # image preprocessing
+tqdm>=4.65
+
+# Face extraction (preprocessing/faceage_mtcnn_preprocess.py)
+# facenet-pytorch>=2.5
