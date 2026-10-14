@@ -259,7 +259,7 @@ python 01_data_exploration.py    # missing-value analysis reported in Methods
 | Figure 7 — ROC before/after bias correction | `scripts/fig6_bias_corrected_roc.py` |
 | Tables 17–18 — ML before/after bias correction | `scripts/ml_modeling/06_leakfree_bias_corrected_ml.py` |
 | Table 19 — achieved precision | `scripts/ml_modeling/bootstrap_ci.py` (from `ml_final.py`; `bootstrap_ci_three_scheme.py` is the three-scheme version) |
-| Additional file 4 — imputation sensitivity | `scripts/ml_modeling/final_table13.py` (S0 / S1 / S2 comparison) |
+| Additional file 4, Table 3 — imputation sensitivity | S0 / S1 from `scripts/ml_modeling/final_table13.py`; S2 (the reported scheme) from `scripts/ml_modeling/ml_final.py` (`MICE`, raw variables, m = 5) |
 
 ---
 

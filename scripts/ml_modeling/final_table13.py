@@ -13,8 +13,10 @@ and with bootstrap confidence intervals.
 Relationship to other scripts
 -----------------------------
 Superseded as the Table 13 producer by ml_final.py, which is the pipeline actually reported.
-What remains live here is the S0 -> S1 -> S2 comparison itself: the effect of moving imputation
-inside the folds, reported in Additional file 4, Table 4.
+What remains live here is the S0 -> S1 comparison itself: the effect of moving the median from
+the full cohort into the training folds, reported in Additional file 4, Table 3. The S2 column of
+that table is the MICE result from ml_final.py (m = 5), which reproduces Table 13; it is *not*
+this script's S2_foldMICE, whose single conditional imputation is a separate experiment.
 
 This script's output also feeds bootstrap_ci_three_scheme.py (results/ml_modeling/final_table13.npz).
 
